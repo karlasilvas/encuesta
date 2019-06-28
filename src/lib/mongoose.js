@@ -1,8 +1,10 @@
-var mongoose = require('mongoose');
-mongoose.connect('mongodb://localhost/test', {useNewUrlParser: true});
+const mongoose = require('mongoose');
+mongoose.connect('mongodb://localhost/local', {useNewUrlParser: true});
 
-var db = mongoose.connect;
+const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 db.once('open', function(){
     // we're connected!
 });
+
+module.exports = db;

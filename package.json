@@ -17,6 +17,6 @@
   },
   "homepage": "https://github.com/karlasilvas/encuesta#readme",
   "dependencies": {
-    "mongoose": "^5.6.1"
+    "mongoose": "^5.7.5"
   }
 }
